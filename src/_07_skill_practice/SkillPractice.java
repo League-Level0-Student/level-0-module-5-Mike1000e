@@ -1,5 +1,7 @@
 package _07_skill_practice;
 
+import javax.swing.JOptionPane;
+
 public class SkillPractice {
 			public static void main(String[] args) {
 
@@ -14,18 +16,18 @@ public class SkillPractice {
 		void skill1() {
 		// Use pop-ups for the following.
 		// Ask the user how many dimes they have
-
-
-
+			String numD = JOptionPane.showInputDialog(null, "How many dimes do you have?");
+			int dimes = Integer.parseInt(numD);
+			int cents = dimes* 10;
 
 		// Tell them how many cents they have (hint multiply by 10)
-
+			JOptionPane.showMessageDialog(null, "You have " + cents + " cents.");
 
 
 
 		// Ask the user how tall they are (inches)
 
-
+			
 
 
 		// If they are shorter than 36 inches, tell them to eat their Wheaties
