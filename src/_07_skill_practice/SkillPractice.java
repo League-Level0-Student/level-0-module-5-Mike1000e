@@ -26,19 +26,22 @@ public class SkillPractice {
 
 
 		// Ask the user how tall they are (inches)
-
+			String hieght = JOptionPane.showInputDialog(null, "How tall are you in inches?");
 			
 
 
 		// If they are shorter than 36 inches, tell them to eat their Wheaties
-
+			int hei = Integer.parseInt(hieght);
+			if(hei <= 36) {
+				JOptionPane.showMessageDialog(null, "Eat your wheaties!");
+			}
 
 
 
 		}
 
 		void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
-
+			
 
 
 

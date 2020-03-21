@@ -18,12 +18,15 @@ public class GoofyNames {
 		// 3. Loop through each character of the name (steps 4 - 6).
 		//    HINT: Use .length() to determine the number of characters in the String.
 		int car = name.length();
-			for(int i = 0; i > car; i++) {
-				System.out.println(name.substring(i,car));
+			for(int i = 0; i < car; i++) {
+				String num = name.substring(i,i+1);
+				if(i%2==0) {
+					num = num.toUpperCase();	
+				}else {
+					num = num.toLowerCase();
+				}
+				goofyName = goofyName + num;	
 			
-				
-				
-			}
 			// 4. Create a String variable to store the next character of the name
 			//    using .substring(start, end)
 			//    HINT: replace 'start' and 'end' to get String with character at i 
@@ -34,9 +37,9 @@ public class GoofyNames {
 			
 			// 6. ADD this String  (containing 1 char) to the goofyName String
 
-		
+			}
 		// 7. Use pop-up to show user their Goofy name
-
+			JOptionPane.showMessageDialog(null, goofyName);
 	}
 }
 
