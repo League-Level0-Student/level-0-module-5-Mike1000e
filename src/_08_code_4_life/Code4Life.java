@@ -13,6 +13,8 @@ import javax.sound.sampled.Clip;
 import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 
+
+
 public class Code4Life {
 	public static void main(String[] args) {
 	// 1. Ask the user how many hours they spent coding this week.

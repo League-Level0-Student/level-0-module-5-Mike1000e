@@ -44,12 +44,30 @@ public class ForLoopGauntlet {
 			}
 		}
 		//2.
-		for(int o=1; o<8; o+=3) {
-			for(int n=o+1;n<9;n+=3) {
-				System.out.println(o + " " + n + " " + n+1);
+		for(int i = 0; i< 8 ;i +=3 ) {
+			for(int n = 1; n < 4; n++) {
+				System.out.print((i+n) + " ");
 			}
+			System.out.println();
 		}
-		
+		//3.
+		for(int i = 0; i< 91 ;i +=10 ) {
+			for(int n = 1; n < 11; n++) {
+				System.out.print((i+n) + " ");
+			}
+			System.out.println();
+		}
+		//4.
+		for(int i = 1; i < 7; i++) {
+			for(int n=i;n>0;n--) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		//BONUS
+		for(int i=0; i<100;i++) {
+			System.out.println((100-i));
+		}
 		
 		
 		
